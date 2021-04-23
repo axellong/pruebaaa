@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="entity">
+    <class name="CuentaPagar" table="cuentas_pagar" lazy="false">
+
+        <id name="idCuentaPagar"
+            column="id_cuenta_pagar"
+            type="java.lang.Integer"
+            unsaved-value="null">
+            <generator class="increment">
+            </generator>
+        </id>
+
+        <property name="nombreCuentPagar" column="nombre_cuenta"/>
+        <property name="mes" column="mes"/>
+        <property name="categoria" column="categoria"/>
+        <property name="anio" column="anio"/>
+        <property name="clasificacion" column="clasificacion"/>
+        <property name="semana1" column="semana1"/>
+        <property name="semana2" column="semana2"/>
+        <property name="semana3" column="semana3"/>
+        <property name="semana4" column="semana4"/>
+        <property name="semana5" column="semana5"/>
+
+
+    </class>
+</hibernate-mapping>
